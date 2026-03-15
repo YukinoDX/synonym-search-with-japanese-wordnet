@@ -1,0 +1,13 @@
+<html>
+<head><link rel="stylesheet" href="static/style.css"></head>
+<body>
+<div id="pbox">
+<div id="sbox">
+<form action="/links" method="GET" id="search"><input name="lemma" value={{ lemma }}></form>
+<button form="search"><img src="static/img/search.png"></button>
+</div>
+<hr />
+<div id="result">{% block result %}{% endblock %}</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+#pbox {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    padding: 32px;
+    height: fit-content;
+    width: 50vw;
+}
+
+#sbox {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    height: 100%;
+}
+
+input {
+    border-radius: 16px;
+    border-width: 2px;
+    height: 100%;
+    padding: 16px;
+}
+
+button {
+    border-width: 0;
+    background-color: white;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+}
+
+hr {
+    margin-top: 16px;
+}
+
+#result {
+    position: relative;
+    left: 16px;
+}
+
+#def {
+    position: relative;
+    padding-left: 8px;
+}
+
+#def::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 4px;
+    height: 1em;
+    background: #888888;
+}
+
+#lemmas {
+    position: relative;
+    left: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+#links {
+    position: relative;
+    left: 20px;
+}
+
+#link {
+    border: 2px solid #888888;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.8em;
+}
+
+#lemmas2 {
+    position: relative;
+    left: 32px;
+}

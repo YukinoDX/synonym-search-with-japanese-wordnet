@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block result %}
+{% for defs,links2lemmas in defs2links2lemmas.items() %}
+<p id="def">
+    {% for def_ in defs %}
+    {{ def_ }}&emsp;
+    {% endfor %}
+</p>
+<div id="links">
+    {% for (link,defs2),lemmas in links2lemmas.items() %}
+    <span id="def">{% for def_ in defs2 %}{{ def_ }}&emsp;{% endfor %}</span><span id="link">{{ link }}</span>
+
+    <p id="lemmas2">
+        {% for lemma in lemmas %}
+        <a href="/synonym?word={{ lemma }}">{{ lemma }}&emsp;</a>
+        {% endfor %}
+    </p>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}
