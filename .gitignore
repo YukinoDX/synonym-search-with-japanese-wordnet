@@ -1,1 +1,3 @@
 db/wnjpn.db
+.env/
+app/__pycache__
